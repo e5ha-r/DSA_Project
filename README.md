@@ -43,7 +43,7 @@ The simulation demonstrates how diseases propagate through communities using cla
 ---
 
 ## Project Structure
-DSA_Project/
+DiseaseSpreadSimulation/
 │
 ├── covid/
 │ ├── backend/
@@ -110,7 +110,7 @@ These metrics are plotted as **SIR curves** in real time.
 
 ## Run the Backend (FastAPI)
 
-Open a terminal **in the folder that contains `DSA_Project/`**, then:
+Open a terminal **in the folder that contains `DiseaseSpreadSimulation/`**, then:
 
 ```bash
 cd covid
