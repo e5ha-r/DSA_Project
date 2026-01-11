@@ -45,17 +45,34 @@ The simulation demonstrates how diseases propagate through communities using cla
 ## Project Structure
 DiseaseSpreadSimulation/
 │
-├── covid/
-│ ├── backend/
-│ │ ├── app.py / main.py
-│ │ ├── simulation/
-│ │ └── graph_utils/
-│ │
-│ ├── frontend/
-│ │ ├── src/
-│ │ ├── public/
-│ │ └── .env
-│ │
+│├── backend/
+│   ├── venv/                # Python virtual environment
+│   ├── __pycache__/         # Python cache files
+│   │
+│   ├── api_schemas.py       # Pydantic schemas for API requests/responses
+│   ├── config.py            # Global configuration (constants, settings)
+│   ├── graph_gen.py         # Social network graph generation logic
+│   ├── main.py              # FastAPI app entry point
+│   ├── models.py            # Data models (SIR states, node structures)
+│   ├── sim_logic.py         # Core disease spread simulation (SIR model)
+│   ├── spatial.py           # Spatial / location-based node handling
+│   ├── stores.py            # In-memory data storage for simulation state
+│   └── utils.py             # Helper and utility functions
+│
+├── frontend/
+│   ├── public/              # Static assets
+│   ├── src/                 # React source code
+│   │
+│   ├── .env                 # Environment variables (Google Maps API key)
+│   ├── .gitignore           # Git ignore rules
+│   ├── README.md            # Frontend-specific documentation
+│   ├── eslint.config.js     # ESLint configuration
+│   ├── index.html           # Main HTML entry
+│   ├── package-lock.json    # Dependency lock file
+│   ├── package.json         # NPM dependencies and scripts
+│   ├── postcss.config.js    # PostCSS configuration
+│   ├── tailwind.config.js   # Tailwind CSS configuration
+│   └── vite.config.js       # Vite build and dev server config
 │ ├── requirements.txt
 │ └── README.md
 
