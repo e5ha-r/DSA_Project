@@ -205,5 +205,3 @@ const API_BASE_DEFAULT = "http://localhost:8001";
 ```
 
 ---
-
-If you tell me what OS you’re on (Windows/macOS/Linux) **and paste the exact error text** (if any), I’ll point to the exact fix.
